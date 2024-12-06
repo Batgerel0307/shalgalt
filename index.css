@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav button {
+    background-color: #444;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+nav button:hover {
+    background-color: #555;
+}
+
+.section {
+    padding: 20px;
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    margin: 20px auto;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

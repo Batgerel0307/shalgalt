@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>хувцасны дэлгүүр</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button onclick="showSection('home')">нүүр</button>
+            <button onclick="showSection('add-product')">бүтээгдэхүүн нэмэх</button>
+            <button onclick="showSection('cart')">сагс</button>
+        </nav>
+    </header>
+    <main>
+
+        <section id="home" class="section">
+            <h1>нүүр</h1>
+            <div id="home-products"></div>
+        </section>
+
+
+        <section id="add-product" class="section hidden">
+            <h1>бүтээгдэхүүн нэмэх</h1>
+            <div class="product-card">
+                <img src="/download (1).jpg" alt="Product Image">
+                <h2 id="product-title">гоё пүүз</h2>
+                <p id="product-description">орчин үеийн гоё пүүз.</p>
+                <span id="product-price">үнэ 1 сая</span>
+                <button onclick="addToCart()">сагсруу нэмэх</button>
+            </div>
+        </section>
+
+
+        <section id="cart" class="section hidden">
+            <h1>таний сагс</h1>
+            <div id="cart-items"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
